@@ -1,0 +1,77 @@
+@use 'functions' as functions;
+
+// white
+$color-white: #fff;
+// black
+$color-black: #000;
+// gray
+$color-gray-100: #f3f4f6;
+$color-gray-300: #d1d5db;
+$color-gray-500: #6b7280;
+$color-gray-700: #374151;
+$color-gray-900: #111827;
+// red
+$color-red-100: #fca5a5;
+$color-red-300: #f87171;
+$color-red-500: #ef4444;
+$color-red-700: #dc2626;
+$color-red-900: #b91c1c;
+// yellow
+$color-yellow-100: #fef3c7;
+$color-yellow-300: #fde68a;
+$color-yellow-500: #fcd34d;
+$color-yellow-700: #fbbf24;
+$color-yellow-900: #f59e0b;
+// brown
+$color-brown-100: #d97706;
+$color-brown-300: #b45309;
+$color-brown-500: #92400e;
+$color-brown-700: #78350f;
+$color-brown-900: #421e09;
+// green
+$color-green-100: #a7f3d0;
+$color-green-300: #34d399;
+$color-green-500: #10b981;
+$color-green-700: #047857;
+$color-green-900: #065f46;
+// blue
+$color-blue-100: #93c5fd;
+$color-blue-300: #60a5fa;
+$color-blue-500: #3b82f6;
+$color-blue-700: #1d4ed8;
+$color-blue-900: #1e40af;
+//purple
+$color-purple-100: #c4b5fd;
+$color-purple-300: #a78bfa;
+$color-purple-500: #8b5cf6;
+$color-purple-700: #7c3aed;
+$color-purple-900: #5b21b6;
+// pink
+$color-pink-100: #fbcfe8;
+$color-pink-300: #f9a8d4;
+$color-pink-500: #ec4899;
+$color-pink-700: #db2777;
+$color-pink-900: #be185d;
+
+// font-family
+$font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka',
+  'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS P Gothic', sans-serif;
+
+// font-size
+$font-base: functions.rem(16);
+$font-3xl: calc(#{$font-base} + #{functions.rem(20)}); // 40
+$font-2xl: calc(#{$font-base} + #{functions.rem(16)}); // 32
+$font-xl: calc(#{$font-base} + #{functions.rem(8)}); // 24
+$font-lg: calc(#{$font-base} + #{functions.rem(2)}); // 18
+$font-sm: calc(#{$font-base} - #{functions.rem(2)}); // 14
+$font-xs: calc(#{$font-base} - #{functions.rem(4)}); // 12
+
+// breakpoint
+$breakpoints: (
+  'xs': 480px,
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  '2xl': 1536px,
+) !default;

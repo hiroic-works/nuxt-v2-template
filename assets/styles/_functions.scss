@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+@function per($size, $baseSize) {
+  @return percentage($size / $baseSize);
+}
+
+@function em($px, $size: 14) {
+  @return math.div($px, $size) * 1em;
+}
+
+@function rem($size) {
+  @return math.div($size, 16) * 1rem;
+}
+
+@function vw($screenSize, $px) {
+  @return (math.div($px, $screenSize) * 100) * 1vw;
+}
